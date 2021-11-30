@@ -39,6 +39,41 @@ module "tfe-registry" {
 ```
 
 <!--- BEGIN_TF_DOCS --->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | >= 0.26.1, < 1.0.0 |
+
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | >= 0.26.1, < 1.0.0 |
+
+## Modules
+
+No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [tfe_registry_module.default](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/registry_module) | resource |
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_display_identifier"></a> [display\_identifier](#input\_display\_identifier) | The display identifier for your VCS repository | `string` | `null` | no |
+| <a name="input_identifier"></a> [identifier](#input\_identifier) | A reference to your VCS repository in the format <organization>/<repository> | `string` | `null` | no |
+| <a name="input_oauth_token_id"></a> [oauth\_token\_id](#input\_oauth\_token\_id) | Token ID of the VCS Connection (OAuth Connection Token) to use | `string` | `null` | no |
+
+## Outputs
+
+No outputs.
+
 <!--- END_TF_DOCS --->
 
 ## Authors
