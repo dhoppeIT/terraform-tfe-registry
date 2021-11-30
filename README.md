@@ -34,7 +34,7 @@ module "tfe-registry" {
 
   display_identifier = "dhoppeIT/terraform-tfe-registry"
   identifier         = "dhoppeIT/terraform-tfe-registry"
-  oauth_token_id     =  module.tfe-oauth_client.oauth_token_id
+  oauth_token_id     = module.tfe-oauth_client.oauth_token_id
 }
 ```
 
