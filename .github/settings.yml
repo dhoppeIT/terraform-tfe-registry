@@ -3,7 +3,7 @@ repository:
   name: terraform-tfe-registry
   description: Terraform module to manage the Terraform Cloud/Enterprise resource (tfe_registry_module)
   homepage: https://registry.terraform.io/modules/dhoppeIT/registry/tfe/latest
-  topics: terraform, tfe_registry_module
+  topics: terraform, tfe, registry-module
   private: false
   has_issues: true
   has_projects: false
