@@ -66,9 +66,9 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_display_identifier"></a> [display\_identifier](#input\_display\_identifier) | The display identifier for your VCS repository | `string` | `null` | no |
-| <a name="input_identifier"></a> [identifier](#input\_identifier) | A reference to your VCS repository in the format <organization>/<repository> | `string` | `null` | no |
-| <a name="input_oauth_token_id"></a> [oauth\_token\_id](#input\_oauth\_token\_id) | Token ID of the VCS Connection (OAuth Connection Token) to use | `string` | `null` | no |
+| <a name="input_display_identifier"></a> [display\_identifier](#input\_display\_identifier) | The display identifier for your VCS repository | `string` | n/a | yes |
+| <a name="input_identifier"></a> [identifier](#input\_identifier) | A reference to your VCS repository in the format <organization>/<repository> | `string` | n/a | yes |
+| <a name="input_oauth_token_id"></a> [oauth\_token\_id](#input\_oauth\_token\_id) | Token ID of the VCS Connection (OAuth Connection Token) to use | `string` | n/a | yes |
 
 ## Outputs
 
