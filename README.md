@@ -12,29 +12,29 @@ Terraform module to manage the Terraform Cloud/Enterprise resource
 Copy and paste into your Terraform configuration, insert the variables and run ```terraform init```:
 
 ```hcl
-module "tfe-organization" {
+module "tfe_organization" {
   source = "dhoppeIT/organization/tfe"
 
   name  = "dhoppeIT"
   email = "terraform@dhoppe.it"
 }
 
-module "tfe-oauth_client" {
+module "tfe_oauth_client" {
   source = "dhoppeIT/oauth_client/tfe"
 
-  organization     = module.tfe-organization.name
+  organization     = module.tfe_organization.name
   api_url          = "https://api.github.com"
   http_url         = "https://github.com"
   oauth_token      = "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"
   service_provider = "github"
 }
 
-module "tfe-registry" {
+module "tfe_registry" {
   source = "dhoppeIT/registry/tfe"
 
   display_identifier = "dhoppeIT/terraform-tfe-registry"
   identifier         = "dhoppeIT/terraform-tfe-registry"
-  oauth_token_id     = module.tfe-oauth_client.oauth_token_id
+  oauth_token_id     = module.tfe_oauth_client.oauth_token_id
 }
 ```
 
