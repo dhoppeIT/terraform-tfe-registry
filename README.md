@@ -1,7 +1,8 @@
 # terraform-tfe-registry
 
-Terraform module to manage the Terraform Cloud/Enterprise resource
-(tfe_registry_module).
+Terraform module to manage the following Terraform Cloud/Enterprise resource:
+
+* tfe_registry_module
 
 ## Graph
 
@@ -13,14 +14,16 @@ Copy and paste into your Terraform configuration, insert the variables and run `
 
 ```hcl
 module "tfe_organization" {
-  source = "dhoppeIT/organization/tfe"
+  source  = "dhoppeIT/organization/tfe"
+  version = "~> 0.1"
 
   name  = "dhoppeIT"
   email = "terraform@dhoppe.it"
 }
 
 module "tfe_oauth_client" {
-  source = "dhoppeIT/oauth_client/tfe"
+  source  = "dhoppeIT/oauth_client/tfe"
+  version = "~> 0.2"
 
   organization     = module.tfe_organization.name
   api_url          = "https://api.github.com"
@@ -30,7 +33,8 @@ module "tfe_oauth_client" {
 }
 
 module "tfe_registry" {
-  source = "dhoppeIT/registry/tfe"
+  source  = "dhoppeIT/registry/tfe"
+  version = "~> 0.1"
 
   display_identifier = "dhoppeIT/terraform-tfe-registry"
   identifier         = "dhoppeIT/terraform-tfe-registry"
@@ -50,7 +54,7 @@ module "tfe_registry" {
 
 | Name | Version |
 |------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.27.1 |
+| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.28.0 |
 
 ## Modules
 
@@ -72,7 +76,12 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_id"></a> [id](#output\_id) | The ID of the registry module |
+| <a name="output_module_provider"></a> [module\_provider](#output\_module\_provider) | The provider of the registry module |
+| <a name="output_name"></a> [name](#output\_name) | The name of registry module |
+| <a name="output_organization"></a> [organization](#output\_organization) | The name of the organization associated with the registry module |
 
 <!--- END_TF_DOCS --->
 
