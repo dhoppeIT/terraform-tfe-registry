@@ -42,7 +42,7 @@ module "tfe_registry" {
 }
 ```
 
-<!--- BEGIN_TF_DOCS --->
+<!-- BEGIN_TF_DOCS -->
 ## Requirements
 
 | Name | Version |
@@ -83,7 +83,7 @@ No modules.
 | <a name="output_name"></a> [name](#output\_name) | The name of registry module |
 | <a name="output_organization"></a> [organization](#output\_organization) | The name of the organization associated with the registry module |
 
-<!--- END_TF_DOCS --->
+<!-- END_TF_DOCS -->
 
 ## Authors
 
@@ -92,45 +92,3 @@ Created and maintained by [Dennis Hoppe](https://github.com/dhoppeIT/).
 ## License
 
 Apache 2 licensed. See [LICENSE](https://github.com/dhoppeIT/terraform-tfe-registry/blob/main/LICENSE) for full details.
-
-<!-- BEGIN_TF_DOCS -->
-## Requirements
-
-| Name | Version |
-|------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_tfe"></a> [tfe](#requirement\_tfe) | ~> 0.26 |
-
-## Providers
-
-| Name | Version |
-|------|---------|
-| <a name="provider_tfe"></a> [tfe](#provider\_tfe) | 0.32.1 |
-
-## Modules
-
-No modules.
-
-## Resources
-
-| Name | Type |
-|------|------|
-| [tfe_registry_module.default](https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/registry_module) | resource |
-
-## Inputs
-
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_display_identifier"></a> [display\_identifier](#input\_display\_identifier) | The display identifier for your VCS repository | `string` | n/a | yes |
-| <a name="input_identifier"></a> [identifier](#input\_identifier) | A reference to your VCS repository in the format <organization>/<repository> | `string` | n/a | yes |
-| <a name="input_oauth_token_id"></a> [oauth\_token\_id](#input\_oauth\_token\_id) | Token ID of the VCS Connection (OAuth Connection Token) to use | `string` | n/a | yes |
-
-## Outputs
-
-| Name | Description |
-|------|-------------|
-| <a name="output_id"></a> [id](#output\_id) | The ID of the registry module |
-| <a name="output_module_provider"></a> [module\_provider](#output\_module\_provider) | The provider of the registry module |
-| <a name="output_name"></a> [name](#output\_name) | The name of registry module |
-| <a name="output_organization"></a> [organization](#output\_organization) | The name of the organization associated with the registry module |
-<!-- END_TF_DOCS -->
