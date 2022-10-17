@@ -58,7 +58,6 @@ No resources.
 | <a name="output_registry_module_provider"></a> [registry\_module\_provider](#output\_registry\_module\_provider) | The provider of the registry module |
 | <a name="output_registry_name"></a> [registry\_name](#output\_registry\_name) | The name of registry module |
 | <a name="output_registry_organization"></a> [registry\_organization](#output\_registry\_organization) | The name of the organization associated with the registry module |
-
 <!-- END_TF_DOCS -->
 
 ## Authors
